@@ -1,3 +1,5 @@
+# Practical Application Assignment 5.1: Will the Customer Accept the Coupon?
+
 ## Background
 
 As part of the UC Berkeley Professional Certificate in Machine Learning
@@ -103,66 +105,32 @@ or columns of data that was collected.
 
 As described in the assignment, the attributes of this dataset include:
 
-User attributes
+1\.User attributes
 
 \- Gender: male, female
-
 \- Age: below 21, 21 to 25, 26 to 30, etc.
-
-\- Marital Status: single, married partner, unmarried partner, or
-widowed
-
+\- Marital Status: single, married partner, unmarried partner, or widowed
 \- Number of children: 0, 1, or more than 1
-
-\- Education: high school, bachelor’s degree, associate’s degree, or
-graduate degree
-
+\- Education: high school, bachelor’s degree, associate’s degree, or graduate degree
 \- Occupation: architecture & engineering, business & financial, etc.
-
-\- Annual income: less than \\\$12500, \\\$12500 - \\\$24999,
-\\\$25000 - \\\$37499, etc.
-
-\- Number of times that he/she goes to a bar: 0, less than 1, 1 to 3, 4
-to 8 or greater than 8
-
-\- Number of times that he/she buys takeaway food: 0, less than 1, 1 to
-3, 4 to 8 or greater
-
-than 8
-
-\- Number of times that he/she goes to a coffee house: 0, less than 1, 1
-to 3, 4 to 8 or
-
-greater than 8
-
-\- Number of times that he/she eats at a restaurant with average expense
-less than \\\$20 per
-
-person: 0, less than 1, 1 to 3, 4 to 8 or greater than 8
-
-\- Number of times that he/she goes to a bar: 0, less than 1, 1 to 3, 4
-to 8 or greater than 8
+\- Annual income: less than \\\$12500, \\\$12500 - \\\$24999, \\\$25000 - \\\$37499, etc.
+\- Number of times that he/she goes to a bar: 0, less than 1, 1 to 3, 4 to 8 or greater than 8
+\- Number of times that he/she buys takeaway food: 0, less than 1, 1 to 3, 4 to 8 or greater than 8
+\- Number of times that he/she goes to a coffee house: 0, less than 1, 1 to 3, 4 to 8 or greater than 8
+\- Number of times that he/she eats at a restaurant with average expense less than \\\$20 per person: 0, less than 1, 1 to 3, 4 to 8 or greater than 8
+\- Number of times that he/she goes to a bar: 0, less than 1, 1 to 3, 4 to 8 or greater than 8
 
 2\. Contextual attributes
 
 \- Driving destination: home, work, or no urgent destination
-
-\- Location of user, coupon and destination: we provide a map to show
-the geographical location of the user, destination, and the venue, and
-we mark the distance between each two places with time of driving. The
-user can see whether the venue is in the same direction as the
+\- Location of user, coupon and destination: we provide a map to show the geographical location of the user, destination, and the venue, and we mark the distance between each two places with time of driving. The user can see whether the venue is in the same direction as the
 destination.
-
 \- Weather: sunny, rainy, or snowy
-
 \- Temperature: 30F, 55F, or 80F
-
 \- Time: 10AM, 2PM, or 6PM
-
 \- Passenger: alone, partner, kid(s), or friend(s)
 
 3\. Coupon attributes
-
 \- time before it expires: 2 hours or one day
 
 **Jupyter Notebook**
@@ -175,7 +143,7 @@ utilized in data analysis, machine learning, statistical modeling, and
 more.
 
 The Jupyter Notebook for this assignment is located in Github (Github,
-n.d), which is a widely used platform for hosting software development
+n.d.), which is a widely used platform for hosting software development
 projects, including repositories related to data analysis methodologies
 like CRISP-DM.
 
@@ -195,13 +163,9 @@ analyzing datasets.
 The following libraries were used in this assignment:
 
 - MatplotLib
-
 - Seaborn
-
 - Pandas
-
 - Numpy
-
 - Plotly
 
 The first step in data understanding is to import the dataset into
@@ -209,69 +173,12 @@ Pandas. Pandas is a Python library that facilitates the interrogation
 and manipulation of data so that it can be used in data analysis tools,
 such as Matplotlib and Seaborn.
 
-Our first look at the dataset uses the Pandas Info method:
+Our first look at the dataset uses the Pandas Info method.
 
-\<class 'pandas.core.frame.DataFrame'\>
-
-RangeIndex: 12684 entries, 0 to 12683
-
-Data columns (total 26 columns):
-
-\# Column Non-Null Count Dtype
-
---- ------ -------------- -----
-
-0 destination 12684 non-null object
-
-1 passanger 12684 non-null object
-
-2 weather 12684 non-null object
-
-3 temperature 12684 non-null int64
-
-4 time 12684 non-null object
-
-5 coupon 12684 non-null object
-
-6 expiration 12684 non-null object
-
-7 gender 12684 non-null object
-
-8 age 12684 non-null object
-
-9 maritalStatus 12684 non-null object
-
-10 has_children 12684 non-null int64
-
-11 education 12684 non-null object
-
-12 occupation 12684 non-null object
-
-13 income 12684 non-null object
-
-14 car 108 non-null object
-
-15 Bar 12577 non-null object
-
-16 CoffeeHouse 12467 non-null object
-
-17 CarryAway 12533 non-null object
-
-18 RestaurantLessThan20 12554 non-null object
-
-19 Restaurant20To50 12495 non-null object
-
-...
-
-24 direction_opp 12684 non-null int64
-
-25 Y 12684 non-null int64
-
-dtypes: int64(8), object(18)
 
 **Numerical Values**
 
-The results list the name of each column and the format of the data
+The results of the df.info() method list the name of each column and the format of the data
 field. Fields that are of the data type int64 are numerical and can be
 used directly to quantify the value.
 
@@ -293,7 +200,7 @@ a value will cause problems during analysis and therefore must be
 replaced or dropped.
 
 - Several of the categorical columns have a value of ‘nan’, which means
-  Not a Number. We will convert those values into the value of ‘Unknown”
+  'Not a Number'. We will convert those values into the value of ‘Unknown”
   by using the Pandas ‘fillna ‘method.
 
 **Missing Data**
@@ -334,176 +241,69 @@ into numerical values:
 
 'time': {'2PM': 0, '10AM': 1, '6PM': 2, '7AM': 3, '10PM': 4},
 
-'coupon': {'Restaurant(\<20)': 0,
-
-'Coffee House': 1,
-
-'Carry out & Take away': 2,
-
-'Bar': 3,
-
-'Restaurant(20-50)': 4},
-
-'expiration': {'1d': 0, '2h': 1},
+'coupon': {'Restaurant(\<20)': 0, 'Coffee House': 1, 'Carry out & Take away': 2, 'Bar': 3, 'Restaurant(20-50)': 4}, 'expiration': {'1d': 0, '2h': 1},
 
 'gender': {'Female': 0, 'Male': 1},
 
 'age': {'21': 0,
-
 '46': 1,
-
 '26': 2,
-
 '31': 3,
-
 '41': 4,
-
 '50plus': 5,
-
 '36': 6,
-
 'below21': 7},
 
 'maritalStatus': {'Unmarried partner': 0,
-
 'Single': 1,
-
 'Married partner': 2,
-
 'Divorced': 3,
-
 'Widowed': 4},
 
 'education': {'Some college - no degree': 0,
-
 'Bachelors degree': 1,
-
 'Associates degree': 2,
-
 'High School Graduate': 3,
-
 'Graduate degree (Masters or Doctorate)': 4,
-
 'Some High School': 5},
 
 'occupation': {'Unemployed': 0,
-
 'Architecture & Engineering': 1,
-
 'Student': 2,
-
 'Education&Training&Library': 3,
-
 'Healthcare Support': 4,
-
 'Healthcare Practitioners & Technical': 5,
-
 'Sales & Related': 6,
-
 'Management': 7,
-
 'Arts Design Entertainment Sports & Media': 8,
-
 'Computer & Mathematical': 9,
-
 'Life Physical Social Science': 10,
-
 'Personal Care & Service': 11,
-
 'Community & Social Services': 12,
-
 'Office & Administrative Support': 13,
-
 'Construction & Extraction': 14,
-
 'Legal': 15,
-
 'Retired': 16,
-
 'Installation Maintenance & Repair': 17,
-
 'Transportation & Material Moving': 18,
-
 'Business & Financial': 19,
-
 'Protective Service': 20,
-
 'Food Preparation & Serving Related': 21,
-
 'Production Occupations': 22,
-
 'Building & Grounds Cleaning & Maintenance': 23,
-
 'Farming Fishing & Forestry': 24},
 
-'income': {'\$37500 - \$49999': 0,
+'income': {'\$37500 - \$49999': 0,'\$62500 - \$74999': 1,'\$12500 - \$24999': 2,'\$75000 - \$87499': 3,'\$50000 - \$62499': 4,'\$25000 - \$37499': 5,'\$100000 or More': 6,'\$87500 - \$99999': 7,'Less than \$12500': 8},
 
-'\$62500 - \$74999': 1,
+'Bar': {'never': 0, 'less1': 1, '1~3': 2, 'gt8': 3, 'Unknown': 4, '4~8':5},
 
-'\$12500 - \$24999': 2,
+'CoffeeHouse': {'never': 0,'less1': 1,'4~8': 2,'1~3': 3,'gt8': 4,'Unknown': 5},
 
-'\$75000 - \$87499': 3,
+'CarryAway': {'Unknown': 0,'4~8': 1,'1~3': 2,'gt8': 3,'less1': 4,'never': 5},
 
-'\$50000 - \$62499': 4,
+'RestaurantLessThan20': {'4~8': 0,'1~3': 1,'less1': 2,'gt8': 3,'Unknown': 4, 'never': 5},
 
-'\$25000 - \$37499': 5,
-
-'\$100000 or More': 6,
-
-'\$87500 - \$99999': 7,
-
-'Less than \$12500': 8},
-
-'Bar': {'never': 0, 'less1': 1, '1~3': 2, 'gt8': 3, 'Unknown': 4, '4~8':
-5},
-
-'CoffeeHouse': {'never': 0,
-
-'less1': 1,
-
-'4~8': 2,
-
-'1~3': 3,
-
-'gt8': 4,
-
-'Unknown': 5},
-
-'CarryAway': {'Unknown': 0,
-
-'4~8': 1,
-
-'1~3': 2,
-
-'gt8': 3,
-
-'less1': 4,
-
-'never': 5},
-
-'RestaurantLessThan20': {'4~8': 0,
-
-'1~3': 1,
-
-'less1': 2,
-
-'gt8': 3,
-
-'Unknown': 4,
-
-'never': 5},
-
-'Restaurant20To50': {'1~3': 0,
-
-'less1': 1,
-
-'never': 2,
-
-'gt8': 3,
-
-'4~8': 4,
-
-'Unknown': 5}}
+'Restaurant20To50': {'1~3': 0,'less1': 1,'never': 2,'gt8': 3, '4~8': 4,'Unknown': 5}}
 
 **Correlation between features (variables)**
 
@@ -584,22 +384,10 @@ coupons as it relates to various other features.
 
 1.  **Create a new DataFrame that contains just bar coupons:**
 
-> bar_coupons_df = df\['coupon'\].replace({v: k for k, v in
-> categorical_mapping\['coupon'\].items()})
->
-> bar_coupons_df.head()
+>bar_coupons_df = df\['coupon'\].replace({v: k for k, v in
+>categorical_mapping\['coupon'\].items()})
 
-**0 Restaurant(\<20)**
 
-**1 Coffee House**
-
-**2 Carry out & Take away**
-
-**3 Coffee House**
-
-**4 Coffee House**
-
-**Name: coupon, dtype: object**
 
 2.  **What proportion of Bar coupons were accepted?**
 
