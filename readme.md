@@ -398,8 +398,6 @@ accepted coupons were of the “Bar” category.
 <img src="./media/image7.png"
 style="width:4.95833in;height:4.28125in" />
 
-**  
-**
 
 3.  **Compare the acceptance rate between those that went to a Bar 3 or
     fewer times a month to those that went more.**
@@ -418,8 +416,6 @@ acceptance rate.
 <img src="./media/image9.png" style="width:6.5in;height:3.93472in"
 alt="A pie chart with text Description automatically generated" />
 
-**  
-**
 
 5.  **Use the same process to compare the acceptance rate between
     drivers who go to Bars more than once a month and had passengers
@@ -433,13 +429,13 @@ than farming, or forestry are 24.2% of the acceptance rate.
 <img src="./media/image10.png" style="width:6.5in;height:3.39028in"
 alt="A pie chart with text Description automatically generated" />
 
-# **6. Compare the acceptance rates between those drivers who:**
+6. Compare the acceptance rates between those drivers who:**
 
-# go to Bars more than once a month, had passengers that were not a kid, and were not widowed \*OR\*
+- go to Bars more than once a month, had passengers that were not a kid, and were not widowed \*OR\*
 
-# go to Bars more than once a month and are under the age of 30 \*OR\*
+- go to Bars more than once a month and are under the age of 30 \*OR\*
 
-# go to cheap restaurants more than 4 times a month and income is less than 50K. 
+- go to cheap restaurants more than 4 times a month and income is less than 50K. 
 
 The acceptance rate of those that met the criteria are 39.3% vs 60.7% of
 the others.
@@ -454,8 +450,6 @@ Based on the high percentage (39.3%) that met these criteria, it appears
 that young, unmarried people with low incomes and that don’t have kids
 are a high percentage of those that accept “Bar” coupons.
 
-**  
-**
 
 ## Independent Exploration
 
@@ -470,25 +464,23 @@ of the accepted coupons were of the “Coffee House” category.
 <img src="./media/image12.png" style="width:5.8125in;height:4.28125in"
 alt="A pie chart with text Description automatically generated" />
 
-**  
-**
 
 2.  **Compare the acceptance rate between those that went to a Coffee
     House 3 or fewer times a month to those that went more.**
 
-> The acceptance rate of those that that went to a Coffee House 3 or
-> fewer times a month compared to those those that went more are shown
-> in the following chart.
->
-> <img src="./media/image13.png" style="width:5.17708in;height:4.28125in"
-> alt="A pie chart with text Description automatically generated" />
+The acceptance rate of those that that went to a Coffee House 3 or
+fewer times a month compared to those those that went more are shown
+in the following chart.
+
+#  <img src="./media/image13.png" style="width:5.17708in;height:4.28125in"
+ alt="A pie chart with text Description automatically generated" />
 
 3.  **Compare the acceptance rate between drivers who go to a Coffee
     House more than once a month and are over the age of 25 to all
     others. Is there a difference?**
 
-> Yes, those that frequent a Coffee House more than once a month and are
-> over 25 are only 27.4% as compared to 72.6% of the others.
+ Yes, those that frequent a Coffee House more than once a month and are
+ over 25 are only 27.4% as compared to 72.6% of the others.
 
 <img src="./media/image14.png" style="width:6.5in;height:3.70556in"
 alt="A pie chart with a person in the middle Description automatically generated" />
@@ -506,13 +498,13 @@ rate.
 <img src="./media/image15.png" style="width:6.5in;height:3.22222in"
 alt="A pie chart with text Description automatically generated" />
 
-# **6. Compare the acceptance rates between those drivers who:**
+6. Compare the acceptance rates between those drivers who:**
 
-# go to a Coffee House more than once a month, had passengers that were not a kid, and were not widowed \*OR\*
+- go to a Coffee House more than once a month, had passengers that were not a kid, and were not widowed \*OR\*
 
-# go to a Coffee House more than once a month and are under the age of 30 \*OR\*
+- go to a Coffee House more than once a month and are under the age of 30 \*OR\*
 
-# go to cheap restaurants more than 4 times a month and income is less than 50K. 
+- go to cheap restaurants more than 4 times a month and income is less than 50K. 
 
 The acceptance rate of those that met the criteria are 44.3% vs 55.7% of
 the others.
