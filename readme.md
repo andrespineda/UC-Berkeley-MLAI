@@ -295,15 +295,15 @@ into numerical values:
 
 'income': {'\$37500 - \$49999': 0,'\$62500 - \$74999': 1,'\$12500 - \$24999': 2,'\$75000 - \$87499': 3,'\$50000 - \$62499': 4,'\$25000 - \$37499': 5,'\$100000 or More': 6,'\$87500 - \$99999': 7,'Less than \$12500': 8},
 
-'Bar': {'never': 0, 'less1': 1, '1~3': 2, 'gt8': 3, 'Unknown': 4, '4~8':5},
+'Bar': {'never': 0, 'less1': 1, '1\~3': 2, 'gt8': 3, 'Unknown': 4, '4\~8':5},
 
-'CoffeeHouse': {'never': 0,'less1': 1,'4~8': 2,'1~3': 3,'gt8': 4,'Unknown': 5},
+'CoffeeHouse': {'never': 0,'less1': 1,'4\~8': 2,'1\~3': 3,'gt8': 4,'Unknown': 5},
 
-'CarryAway': {'Unknown': 0,'4~8': 1,'1~3': 2,'gt8': 3,'less1': 4,'never': 5},
+'CarryAway': {'Unknown': 0,'4\~8': 1,'1~3': 2,'gt8': 3,'less1': 4,'never': 5},
 
-'RestaurantLessThan20': {'4~8': 0,'1~3': 1,'less1': 2,'gt8': 3,'Unknown': 4, 'never': 5},
+'RestaurantLessThan20': {'4\~8': 0,'1~3': 1,'less1': 2,'gt8': 3,'Unknown': 4, 'never': 5},
 
-'Restaurant20To50': {'1~3': 0,'less1': 1,'never': 2,'gt8': 3, '4~8': 4,'Unknown': 5}}
+'Restaurant20To50': {'1\~3': 0,'less1': 1,'never': 2,'gt8': 3, '4\~8': 4,'Unknown': 5}}
 
 **Correlation between features (variables)**
 
