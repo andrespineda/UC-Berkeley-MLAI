@@ -440,7 +440,7 @@ alt="A pie chart with text Description automatically generated" />
 The acceptance rate of those that met the criteria are 39.3% vs 60.7% of
 the others.
 
-# <img src="./media/image11.png"
+<img src="./media/image11.png"
 style="width:4.3125in;height:4.28125in" />
 
 7.  **Based on these observations, what do you hypothesize about drivers
@@ -472,7 +472,7 @@ The acceptance rate of those that that went to a Coffee House 3 or
 fewer times a month compared to those those that went more are shown
 in the following chart.
 
-#  <img src="./media/image13.png" style="width:5.17708in;height:4.28125in"
+<img src="./media/image13.png" style="width:5.17708in;height:4.28125in"
  alt="A pie chart with text Description automatically generated" />
 
 3.  **Compare the acceptance rate between drivers who go to a Coffee
@@ -509,7 +509,7 @@ alt="A pie chart with text Description automatically generated" />
 The acceptance rate of those that met the criteria are 44.3% vs 55.7% of
 the others.
 
-# <img src="./media/image16.png" style="width:4.21875in;height:4.28125in"
+<img src="./media/image16.png" style="width:4.21875in;height:4.28125in"
 alt="A pie chart with text on it Description automatically generated" />
 
 5.  **Based on these observations, what do you hypothesize about drivers
